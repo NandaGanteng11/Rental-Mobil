@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,7 +31,7 @@ Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard'
 Route::prefix('auth')->group(function () {
 
     Route::middleware(['auth'])->group(function () {
-        Route::get('logout', [AuthController::class, 'logput'])->name('auth.logout');
+        Route::get('logout', [AuthController::class, 'logout'])->name('auth.logout');
     });
 
     Route::middleware(['guest'])->group(function () {

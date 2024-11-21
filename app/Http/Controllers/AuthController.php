@@ -14,7 +14,7 @@ class AuthController extends Controller
 
     public function post(Request $request)
     {
-        // dd(request()->all());
+        //dd(request()->all());
         $cre = $request->validate([
             'username' => 'required',
             'password' => 'required'
@@ -23,7 +23,7 @@ class AuthController extends Controller
         if (Auth::attempt($cre)) {
             session()->regenerate();
             return redirect()->intended('/');
-        } else {
+        }else {
             return redirect()->back()->with('warning', 'Username atau password anda salah!');
         }
     }
@@ -36,7 +36,7 @@ class AuthController extends Controller
     public function logout()
     {
         Auth::logout();
-
+        
         return redirect('/');
     }
 }

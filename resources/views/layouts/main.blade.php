@@ -13,6 +13,11 @@
     <link href="{{ asset('assets/vendor/jqvmap/css/jqvmap.min.css')}}" rel="stylesheet">
     <link href="{{ asset('assets/css/style.css')}}" rel="stylesheet">
 
+    <!-- Datatable -->
+    <link href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.3/css/responsive.dataTables.css">
+
 
 
 </head>
@@ -142,6 +147,17 @@
 
 
     <script src="{{asset('assets/js/dashboard/dashboard-1.js')}}"></script>
+
+    <!-- Datatable responsive Mobile -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/rowreorder/1.5.0/js/dataTables.rowReorder.js"></script>
+    <script src="https://cdn.datatables.net/rowreorder/1.5.0/js/rowReorder.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.3/js/responsive.dataTables.js"></script>
+
+    @stack('script')
 
 </body>
 

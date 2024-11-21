@@ -9,7 +9,9 @@
                     {{-- <li><a href="./index2.html">Dashboard 2</a></li> --}}
                 </ul>
             </li>
-            <li class="nav-label">Apps</li>
+            <li><a href="{{route('users.index')}}" aria-expanded="false"><i class="icon icon-single-04"></i><span
+                        class="nav-text">Users</span></a></li>
+            {{--<li class="nav-label">Apps</li>
             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
                         class="icon icon-app-store"></i><span class="nav-text">Apps</span></a>
                 <ul aria-expanded="false">
@@ -110,7 +112,7 @@
                     </li>
                     <li><a href="./page-lock-screen.html">Lock Screen</a></li>
                 </ul>
-            </li>
+            </li>--}}
         </ul>
     </div>
 
